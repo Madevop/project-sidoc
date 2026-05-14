@@ -1,44 +1,195 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test de Holland</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Holland</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<nav class="navbar">
 
-    <div class="logo-left">
-        <img src="logo-escuela.jpg" alt="Escuela">
-    </div>
+    <!-- NAVBAR -->
+    <nav class="navbar">
 
-    <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="test.html">Test de Holland</a></li>
-        <li><a href="videos.html">Videos Informativos</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-    </ul>
+        <div class="logo-left">
+            <img src="logo-escuela.jpg" alt="Escuela">
+        </div>
 
-    <div class="logo-right">
-        <img src="logo-sidoc.jpeg" alt="SIDOC">
-    </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="test.html">Test de Holland</a></li>
+            <li><a href="videos.html">Videos Informativos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
 
-</nav>
-<main class="container">
-  <h1>Consulta tu resultado del Test de Holland</h1>
-  <br>
-  <br>
-  <br>
-  <p>El test de Holland, es una herramienta de orientación vocacional que ayuda a identificar los intereses y preferencias de una persona en relación con distintas áreas profesionales. Este test clasifica los intereses en seis tipos: Realista, Investigador, Artístico, Social, Emprendedor y Convencional, y a partir de ellos sugiere carreras o entornos laborales que se ajusten mejor al perfil del individuo. En esencia, mide la afinidad de una persona hacia ciertas actividades y contextos de trabajo, facilitando la toma de decisiones sobre estudios y futuro profesional.</p>
-  <br>
-  <br>
-  <br>
+        <div class="logo-right">
+            <img src="logo-sidoc.jpeg" alt="SIDOC">
+        </div>
 
-  <input type="text" id="busqueda" placeholder="Últimos 4 dígitos" maxlength="4">
-  <button onclick="buscar()">Buscar</button>
-  <div id="resultado" class="resultado"></div>
-</main>
-<script src="script.js"></script>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <main class="container">
+
+        <h1>Consulta tu resultado del Test de Holland</h1>
+
+        <p class="descripcion-test">
+            El Test de Holland es una herramienta de orientación vocacional
+            que ayuda a identificar los intereses y preferencias de una persona
+            en relación con distintas áreas profesionales.
+
+            Este test clasifica los intereses en seis tipos:
+            Realista, Investigador, Artístico, Social,
+            Emprendedor y Convencional.
+
+            A partir de estos resultados, es posible conocer áreas
+            ocupacionales, habilidades y actividades que mejor se adaptan
+            al perfil de cada persona.
+        </p>
+
+        <!-- BUSCADOR -->
+        <div class="buscador">
+
+            <input
+                type="text"
+                id="busqueda"
+                placeholder="Ingresa los últimos 4 dígitos"
+                maxlength="4">
+
+            <button onclick="buscar()">Buscar</button>
+
+        </div>
+
+        <!-- RESULTADO -->
+        <div id="resultado" class="resultado"></div>
+
+        <!-- TABLA HOLLAND -->
+        <div class="tabla-holland">
+
+            <h2>Tipos de personalidad según Holland</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Características</th>
+                        <th>Ejemplos de empleos</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td><strong>🔧 R – Realista</strong></td>
+                        <td>
+                            Personas prácticas, manuales y activas físicamente.
+                        </td>
+                        <td>
+                            Mecánico automotriz, Electricista,
+                            Carpintero, Ingeniero civil,
+                            Agricultor, Técnico en mantenimiento,
+                            Chef, Conductor profesional,
+                            Entrenador deportivo
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>🔬 I – Investigador</strong></td>
+                        <td>
+                            Personas analíticas, curiosas y orientadas
+                            a resolver problemas.
+                        </td>
+                        <td>
+                            Médico, Psicólogo,
+                            Terapeuta ocupacional,
+                            Biólogo, Químico,
+                            Investigador científico,
+                            Programador, Matemático,
+                            Analista de datos
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>🎨 A – Artístico</strong></td>
+                        <td>
+                            Personas creativas, expresivas e innovadoras.
+                        </td>
+                        <td>
+                            Diseñador gráfico, Actor,
+                            Músico, Bailarín,
+                            Fotógrafo, Escritor,
+                            Decorador de interiores,
+                            Director audiovisual,
+                            Ilustrador
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>🤝 S – Social</strong></td>
+                        <td>
+                            Personas que disfrutan ayudar,
+                            enseñar y trabajar con otros.
+                        </td>
+                        <td>
+                            Docente, Trabajador social,
+                            Enfermero, Terapeuta ocupacional,
+                            Psicólogo, Fonoaudiólogo,
+                            Orientador escolar,
+                            Coach deportivo,
+                            Educador especial
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>💼 E – Emprendedor</strong></td>
+                        <td>
+                            Personas líderes, persuasivas
+                            y orientadas a negocios.
+                        </td>
+                        <td>
+                            Administrador de empresas,
+                            Abogado, Vendedor,
+                            Gerente comercial,
+                            Empresario,
+                            Influencer de marca,
+                            Político,
+                            Relacionista público,
+                            Corredor inmobiliario
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>📋 C – Convencional</strong></td>
+                        <td>
+                            Personas organizadas,
+                            detallistas y estructuradas.
+                        </td>
+                        <td>
+                            Contador,
+                            Auxiliar administrativo,
+                            Secretario,
+                            Archivista,
+                            Cajero bancario,
+                            Asistente contable,
+                            Analista financiero,
+                            Digitador,
+                            Técnico en nómina
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

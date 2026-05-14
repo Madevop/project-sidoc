@@ -224,3 +224,126 @@ button:hover{
     color:#444;
     margin-bottom:25px;
 }
+
+/* PAGINA VIDEOS */
+.videos-page{
+    padding:60px 40px;
+    text-align:center;
+}
+
+.videos-page h1{
+    font-size:55px;
+    color:#c61d34;
+    margin-bottom:25px;
+}
+
+.videos-texto{
+    max-width:950px;
+    margin:0 auto 50px;
+    font-size:22px;
+    line-height:1.8;
+    color:#444;
+}
+
+/* CONTENEDOR */
+.videos-container{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+/* TARJETAS */
+.video-card{
+    background:white;
+    width:100%;
+    max-width:550px;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.video-card h2{
+    color:#0d4d8b;
+    margin-bottom:15px;
+}
+
+.video-card p{
+    color:#555;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.video-card video{
+    width:100%;
+    border-radius:14px;
+}
+
+/* TABLA HOLLAND */
+.tabla-holland{
+    width:100%;
+    overflow-x:auto;
+    margin-top:50px;
+}
+
+.tabla-holland table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.tabla-holland thead{
+    background:#c61d34;
+    color:white;
+}
+
+.tabla-holland th{
+    padding:20px;
+    font-size:20px;
+    text-align:left;
+}
+
+.tabla-holland td{
+    padding:20px;
+    border-bottom:1px solid #e5e5e5;
+    line-height:1.8;
+    font-size:17px;
+    vertical-align:top;
+}
+
+.tabla-holland tr:hover{
+    background:#f8f8f8;
+}
+
+/* GALERIA INICIO */
+.galeria{
+    margin-top:60px;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.galeria-card{
+    background:white;
+    padding:15px;
+    border-radius:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    transition:.3s;
+    max-width:500px;
+}
+
+.galeria-card:hover{
+    transform:translateY(-5px);
+}
+
+.galeria-card img{
+    width:100%;
+    max-width:450px;
+    border-radius:16px;
+    display:block;
+}

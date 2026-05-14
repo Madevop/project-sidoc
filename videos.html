@@ -1,43 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Videos Informativos</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos Informativos</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<nav class="navbar">
 
-    <div class="logo-left">
-        <img src="logo-escuela.jpg" alt="Escuela">
-    </div>
+    <!-- NAVBAR -->
+    <nav class="navbar">
 
-    <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="test.html">Test de Holland</a></li>
-        <li><a href="videos.html">Videos Informativos</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-    </ul>
+        <div class="logo-left">
+            <img src="logo-escuela.jpg" alt="Escuela">
+        </div>
 
-    <div class="logo-right">
-        <img src="logo-sidoc.jpeg" alt="SIDOC">
-    </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="test.html">Test de Holland</a></li>
+            <li><a href="videos.html">Videos Informativos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+        </ul>
 
-</nav>
-<main class="container">
-  <h1>Videos Informativo</h1>
-  <br>
-  <br>
-  <h3>Video sobre el uso de pantallas en la primera infancia</h3>
-  <br>
-  <p>El uso excesivo de tecnología afecta la salud y el aprendizaje, haciendo necesario un equilibrio con actividades físicas y sociales.</p>
-  <br>
-  <br>
+        <div class="logo-right">
+            <img src="logo-sidoc.jpeg" alt="SIDOC">
+        </div>
 
-  <video controls width="700" style="max-width:100%; border-radius:16px;">
-    <source src="video-informativo.mp4" type="video/mp4">
-  </video>
-</main>
+    </nav>
+
+    <!-- CONTENIDO -->
+    <main class="videos-page">
+
+        <h1>Videos Informativos</h1>
+
+        <p class="videos-texto">
+            En esta sección encontrarás material audiovisual orientado
+            al fortalecimiento personal, orientación vocacional y desarrollo
+            de habilidades en niños, niñas y jóvenes.
+        </p>
+
+        <!-- CONTENEDOR VIDEOS -->
+        <div class="videos-container">
+
+            <!-- VIDEO 1 -->
+            <div class="video-card">
+
+                <h2>Uso de pantallas en la primera infancia</h2>
+
+                <p>
+                    El uso excesivo de tecnología afecta la salud y el aprendizaje,
+                    haciendo necesario un equilibrio con actividades físicas y sociales.
+                </p>
+
+                <video controls>
+                    <source src="video-informativo.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <!-- VIDEO 2 -->
+            <div class="video-card">
+
+                <h2>Video Informativo Complementario</h2>
+
+                <p>
+                    Importancia de la independencia en actividades de la vida diaria.
+                </p>
+
+                <video controls>
+                    <source src="video-informativo2.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+        </div>
+
+    </main>
+
 </body>
 </html>
